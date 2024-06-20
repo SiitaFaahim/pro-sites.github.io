@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/assets/icons_dark/custom/f-logo.png" type="image/x-icon">
+    <title>faahim | weather API</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <nav id="menu-bar">
+        <h1><img src="./resources/assets/icons_dark/custom/f-logo-full.png" alt=".faahim"> | weather API</h1>
+        <div id="icons-div">
+            <!-- Help menu container -->
+            <div class="menu-container">
+                <img id="h1-icon1" class="icon" src="./resources/icons/icons8-customer-50.png" alt="Help">
+                <ul class="dropdown">
+                    <li><a href="./about.html"><img src="./resources/icons/icons8-about-50.png" alt=""> About</a></li>
+                    <hr>
+                    <li><a href="./contact.html"><img src="./resources/icons/icons8-call-50.png" alt=""> Contact us</a></li>
+                </ul>
+            </div>
+            <span class="line">|</span>
+            <!-- Settings menu container -->
+            <div class="menu-container">
+                <img id="h1-icon2" class="icon" src="./resources/icons/icons8-settings-50.png" alt="Settings">
+                <ul class="dropdown">
+                    <li><a href="./index.html" id="reload"><img src="./resources/icons/icons8-reload-50.png" alt=""> Reload</a></li>
+                    <hr>
+                    <li><a href="#" id="dark-mode-toggle"><img src="./resources/icons/icons8-crescent-moon-50.png" alt=""> Dark Mode</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- the input container -->
+            <div class="search_box">        
+                    <div id="input-div">
+                        <img src="./resources/icons/icons8-location-50.png" class="location-img">
+                        <input id="cityInput" type="text" placeholder="Enter City" onselect="removeplaceholder">
+                        <button id="display-button" onclick="fetchWeather()" onmouseover="changeColor()">
+                        <img id="go-image" src="./resources/icons/icons8-search-50.png" alt=""></button>
+                    </div>
+            </div>                
+<!-- loading animation area -->
+            <div id="weatherContainer">    
+                <div class="loader" id="loader" style="display: none;">
+                </div>
+            </div>
+                  
+
+<!-- the weather results are displayed here -->
+                <div id="weatherData">
+                </div>
+         
+      
+<footer>
+    <p><span id="copyright">
+            &copy;2024 
+            <img src="./resources/assets/icons_dark/custom/f-logo-full.png" alt=".">
+            . All rights reserved.
+        </span>
+        <br>
+        <span id="Powered">
+            Powered by 
+            <a href="https://www.openWeatherMap.org/" title="Free Weather API">
+                OpenWeatherMap.org
+            </a>
+        </span>
+    </p>
+</footer>
+<script src="./server.js"></script>
+</body>
+</html>

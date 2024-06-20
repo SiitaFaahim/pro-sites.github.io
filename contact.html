@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/assets/icons_dark/custom/f-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>faahim | weather API</title>
+</head>
+<body>
+<!-- header -->
+    <nav id="menu-bar">
+        <h1><img src="./resources/assets/icons_dark/custom/f-logo-full.png" alt=".faahim">
+             | contact us</h1>
+        <div id="icons-div">
+            <!-- Help menu container -->
+            <div class="menu-container">
+                <a class="back-to-home" href="./index.html">
+                    <img src="./resources/assets/icons_dark/keyboard_double_arrow_left_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    back
+                </a>
+            </div>
+            <span class="line">|</span>
+            <!-- Settings menu container -->
+            <div class="menu-container">
+                <img id="h1-icon2" class="icon" src="./resources/icons/icons8-settings-50.png" alt="Settings">
+                <ul class="dropdown">
+                    <li><a href="./index.html" id="reload"><img src="./resources/icons/icons8-reload-50.png" alt=""> Reload</a></li>
+                    <hr>
+                    <li><a href="#" id="dark-mode-toggle"><img src="./resources/icons/icons8-crescent-moon-50.png" alt=""> Dark Mode</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- contact section -->
+   <section class="contact-us">
+        <h1>GET IN TOUCH</h1>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam illo, animi <br>
+             temporibus libero ratione nemo nihil maxime perspiciatis delectus corporis?
+            </span>
+        <div class="contact-btns">
+            <div><a class="round-a" href=""><img src="./resources/icons/icons8-call-50-ongoing.png" alt=".">
+                <span>
+                    <a href="" class="contact-links">email@domain.com</a>
+                    <a href="" class="contact-links">email@domain.com</a>
+                </span></a></div>
+            <div><a class="round-a" href=""><img src="./resources/icons/icons8-location-50.png" alt=".">
+                <span>
+                    <a href="" class="contact-links">email@domain.com</a>
+                    <a href="" class="contact-links">email@domain.com</a>
+                </span></a></div>
+            <div><a class="round-a" href=""><img src="./resources/icons/icons8-mail-50.png" alt=".">
+                <span>
+                    <a href="" class="contact-links">email@domain.com</a>
+                    <a href="" class="contact-links">email@domain.com</a>
+                </span></a></div>
+        </div>
+    
+        <form action="" id="contact-form">
+            <span><b>Got something on your mind?
+                  </b> <br>Let us know...
+            </span>
+            <div class="name-em">
+                    <input type="text" id="name" name="Username" placeholder="Name">
+                    <input type="email" name="Email" id="email" placeholder="Email">
+            </div>
+            <div class="msg-div">
+                    <input type="text" name="Message" id="msg" placeholder="Message">
+            </div>
+            <input type="submit" value="Send Message" id="send-msg-btn">
+        </form>
+   </section>
+    <!-- footer -->
+    <footer>
+        <p><span id="copyright">
+                &copy;2024 
+                <img src="./resources/assets/icons_dark/custom/f-logo-full.png" alt=".">
+                . All rights reserved.
+            </span>
+            <br>
+            <span id="Powered">
+                Powered by 
+                <a href="https://www.openWeatherMap.org/" title="Free Weather API">
+                    OpenWeatherMap.org
+                </a>
+            </span>
+        </p>
+    </footer>
+<script src="./server.js"></script>
+</body>
+</html>
